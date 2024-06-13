@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de cadena</title>
+</head>
+<body>
+    <script>
+        //Operador =
+        var nombre = "Luis";
+        var apellido = "Garcia Domador";
+        var completo = nombre + " " + apellido;
+        alert(completo);
+
+        //Operador de asigmación +=
+        var texto = "ABCD";
+        texto += "EFGH"; // su equivalente es 
+                         // texto = texto + "EFGH";
+        alert("El resultado de la alineación de las cadenas es: "+texto);
+        alert(texto);
+
+        /*Sumar numeros y cadenas de caracteres(Estas van encerradas entre comillas dobles o simples)*/
+
+        var resultado = 4 + " " + "Luis Enrique";
+        alert(resultado);
+
+        /* Si quieres operar con números y luego agragar una cadeba de caracteres, procede asi:*/
+
+        var total = ((4+2)/3)**5 + " " + "Luis Enrique";
+        alert(total);
+
+    </script>
+</body>
+</html>
