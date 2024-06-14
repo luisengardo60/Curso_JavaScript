@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador TYPEOF</title>
+</head>
+<body>
+    <script>
+        //TYPEOF: nos devuelve el tipo de dato de una variable o dato
+        var cadena = "Luis Enrique";//Devolvera string
+        var numero = 3.14;//Devolvera number
+        var bool = true;//Devolvera boolean
+        var lista = [1,2,3,4];//Devolvera object
+        var registro = {nombre:"Luis", apellido:"García"};//Devolvera object
+        var fecha = new Date;//Devolvera object
+        var miFuncion = function miFun () {alert ("Hola");};//Devolvra function
+        var sinDefinir;//Devolvera undefined
+        var vacia = null;//Devolvera object
+
+        /*alert("La variable cadena, que se le asigno -Luis Enrique-, devolvera: "+typeof cadena);*/
+        //alert(typeof vacia);
+
+        //INSTANCE: nos devuelve true si un objeto es una instancai de otro especificado
+        var animales = ["perro", "gato", "caballo"];
+        alert(animales instanceof Object);//Devolvera true
+        alert(animales instanceof Array);//Devolvera true
+        alert(animales instanceof Number);//Devolvera false
+    </script>
+</body>
+</html>

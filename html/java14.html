@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de datos</title>
+</head>
+<body>
+    <script>
+        /*var cadena = "Luis" + 15;
+        alert (cadena)
+        var cadena1 = (15 + 3)/9 + " Luis";
+        alert(cadena1);*/
+
+    // Cadenas o strings
+    var cadena = "Luis";
+    var cadena1 = ' Enrique';
+    var cadena2 = " Luis 'Enrique'";
+    //alert(cadena+cadena1+cadena2);
+
+    //Números
+    var entero = 3; 
+    var decimal = 3.56;
+    /*alert(entero+decimal);
+    var cientifica = 12e5;
+    alert(cientifica);
+    var cientifica1 = 12e-5;
+    alert(cientifica1);
+    var cientifica2 = -12e5;
+    alert(cientifica2);*/ 
+
+    //booleano
+    var cierto = true;
+    var falso = false;
+    //alert(falso);
+
+    //array
+    var lista = [1,"hola",6,"edificio"];
+    /*alert(lista[0]);
+    alert(lista[1]);
+    alert(lista[2]);
+    alert(lista[3]);*/ 
+
+    // objetos
+    var animal = {nombre:"Lola", tipo:"Hamster", raza:"Ruso", edad:"1"};
+
+    // operador typeof
+    /*alert(typeof cadena);//Devolvera string
+    alert(typeof cierto);//Devolvera boolean
+    alert(typeof animal);//Devolvera object, tanto para arrays y objetos*/ 
+
+    //undefined
+
+    var objetoSinDefinir;
+    //alert(objetoSinDefinir);//Devuelve undefined
+
+    //vacio
+    var cadena3 = "";
+    //alert(cadena3);//Devuelve nada
+
+    //null
+    var animal = null;
+    alert("Animal: "+animal+ " tipo: "+typeof cadena3);
+
+    //nulos vs definidos
+    typeof undefined;//Devuelve undefined
+    typeof null;//Devuelve objeto;
+    null === undefined;//Devuelve false
+    null == undefined;//Devuelve true    
+    </script>
+</body>
+</html>

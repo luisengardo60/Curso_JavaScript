@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+<body>
+    <script>
+        //sintaxis de una funcion:
+        //functio nombre_funcion (<parametros_separados_por_comas>) { ... }
+        function saludo () {
+            alert("Hola Luis Enrique");
+        }
+        
+        saludo();
+        //Los parentesis invocan a la función 
+        //var resultado_saludo = saludo();
+        //alert(resultado_saludo);
+
+        //Sin parentesis se puede guardar la función en una variable
+        //var resultado_saludo2 = saludo;
+        //alert(resultado_saludo2);
+
+        //funcion con parametros
+        function producto (a,b){
+            return a * b;
+        }
+        var resultado_producto = producto(3,4);
+        alert(resultado_producto);
+        alert(producto(5,6));
+    </script>
+</body>
+</html>
