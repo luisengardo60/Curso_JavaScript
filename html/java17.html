@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametros y funciones</title>
+</head>
+<body>
+    <script>
+        /*Parametros y argumentos
+         - Una función puede tener cero o más parametros
+         - Parámetros son los nombres que aparecen en la definición de una función
+         - Argumentos son los valores que pasamos a (y que recibe) una función
+         
+         Reglas de los parámetros:
+         - No se especifica el tipo de los parámetros
+         - No se verica los tipos de los argumentos
+         - No se comprueba el número de los argumentos recibidos.*/
+
+         /* Parametros por defecto
+          - Cuando llamamos a una función con menos argumentos de los declarados. Los valores que faltan no están definidos.   */ 
+
+        function suma (a,b) {
+                    if (b == undefined)
+                        b = 0;
+                        return a + b;
+                    }
+        var resultado = suma (4);
+        alert (resultado);            
+
+        /*Parámetros por exceso
+        Cuando llamamos a una función con más argumentos de los que ha sido declarada, los valores que nos llegan oueden capturarse a través de un objeto que está incluido en la función, llmado argumens.
+        en esta función se mostrara la cantodad de argumentos que tiene el array para este caso mostrara 6 */ 
+
+        function valores(){
+            alert (arguments.length);
+        }
+        valores (4,6,8,2,7,5); 
+
+        /*en esta función mostrara cada argumento que tiene el array y su posición númerica*/ 
+
+            function valores() {
+                alert("El número de argumentos es: "+arguments.length);
+                for (var i=0; i < arguments.length; i++){
+                    alert("Argumento "+i+"="+arguments[i]);
+                }
+            }
+            valores(4, 6, 8, 2, 7, 5); 
+        
+
+
+    </script>
+</body>
+</html>

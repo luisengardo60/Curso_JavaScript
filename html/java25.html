@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break continue</title>
+</head>
+<body>
+    <script>
+        /* Break: sale o salta fuera del bucle, finalizandolo.
+        Continue: salta hasta la siguiente iteración del bucle; permite saltar una o mas iteraciones 
+        Ejemplo de bucle con break*
+        var i;
+        for (i = 8; i < 10; i++){
+            if (i == 3){
+                break;
+            }
+            alert ("i = "+i);
+        }*/ 
+
+        /*Ejemplo de bucle con continue
+        var j;
+        for (j = 0; j < 10; j++) {
+            if (j == 3 || j == 5) {
+                continue;
+            }
+            alert("j = "+j);
+        }*/       
+        
+        /* Etiquetas: precede una sentencia con el nombre de la etiqueta de dos puntos.
+        - Break sin etiquetas se puede utilizar en bucles o switch.
+        - Break con etiqueta se puede utilizar en un bloque de sentencias etiquetado.
+        - Continue esta etiqueta es opcional. Siempre debe estar dentro del bucle.
+        Ejemplo de Break con etiquetas
+
+        var animales = ["Perro", "Gato", "Hamster"];
+
+        ver_animales: 
+        {
+            alert (animales[0]);
+            alert (animales[1]);
+            break ver_animales;
+            alert (animales[2]);
+        }*/ 
+        /* Ejemplo de continue con etiquetas*/ 
+            var k;
+            for (k = 0; k < 10; k++) {
+                if (k == 3 || k == 5) {
+                    continue;
+                }
+                alert("k = " +k);
+            }              
+    </script>
+</body>
+</html>

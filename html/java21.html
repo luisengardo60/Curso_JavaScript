@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bucle for</title>
+</head>
+<body>
+    <script>
+        /* Sintaxis
+        for (<sentencia_1); (<sentencia_2); (<sentecia_3>){
+            //codigo que se repite
+        }
+        - Senetncia 1: Se ejecuta antes de que empiece el bloque de código a repetir.
+        - Sentencia 2: Define la condición por la que el bloque de código se va ejecutar.
+        - Sentencia 3: Se ejecuta despues de que acabe el bloque de código a repetir.*/ 
+        var i;
+        for (i = 0; i <= 5; i++){
+            alert ("i = "+i);
+        }
+
+        /* Variaciones
+        1.- Si omitimos la primera sentencia debemos haber inicializado la variable con anterioridad*/ 
+
+        var j = 1;
+        for ( ; j <= 5; j++){
+            alert ("J = "+j);
+        }
+
+        /*
+        2.- Si omitimos la segunda sentencia, dentro del código a repetir, debemos de incluir una instrucción break, porque si no, va a infinito, lo que podria bloquear el equipo. */ 
+
+        var k;
+        for (k=1; ;k++){
+            alert ("k = "+k);
+            if (k == 5){
+                break;
+            }
+        }
+
+        /*
+        3.- Si omitimos la tercera sentencia, debemos inrcrementar o decrememtar el valor de la variable dentro del bucle. */ 
+
+        var l;
+        for (l=1; l<=5; ){
+            alert ("l = "+l);
+            l++;
+        }
+
+        /*
+        4.- Podemos trabajar con 2 o más valores del bucle for*/ 
+
+        var m, n;
+        for (m=1, n=10; m<=10, n>=1; m++, n--){
+            alert ("m = "+m+", n = "+n);
+        }
+
+        /* Nota: m++ incremente de 1 en 1
+                 n-- decrementa de 1 en 1*/ 
+    </script>
+    
+</body>
+</html>

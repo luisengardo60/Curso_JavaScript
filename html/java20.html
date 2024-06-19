@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <script>
+        /* Switch
+        - Se utiliza para gacer diferentes acciones basadas en diferentes condiciones.
+        - La condición se evalúa una sola vez.
+        - Si hay alguna coincidencia con algún valor se ejecuta el bloque de código correspondiente.
+        - Break: sale del bloque switch.
+        Syntaxis
+        switch (<expresión>){
+            case valor_1;
+                //Instrucciones para valor_1
+                break;
+            case valor_n;
+                //Instrucciones para valor_n
+                break;
+            default;
+                //Instrucciones en caso de que no se cumpla nunguna condición
+        } 
+        Este tipo de bucle suele usarse para elaborar MENU*/  
+        var nota = 11;
+        var mensaje = "";
+        switch (nota){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:mensaje = "Reprobado";
+                break;
+            case 5:mensaje = "Aprobado";
+                break;
+            case 6:
+            case 7:mensaje = "Aprobado +";
+                break;
+            case 8:mensaje = "Notable";
+                break;
+            case 9:mensaje = "Sobresaliente";
+                break;
+            case 10:mensaje = "Eximido";
+                break;
+            default:mensaje = "El valor no es valido";
+        }
+        alert(mensaje);
+    </script>
+</body>
+</html>
